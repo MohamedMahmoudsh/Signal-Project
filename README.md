@@ -93,6 +93,30 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
 
 ## LSTM model
 
+The Long Short-Term Memory (LSTM) network architecture employed in this project is designed to analyze sequential data such as Electrocardiogram (ECG) signals. LSTMs are particularly effective in capturing long-term dependencies in time-series data, making them suitable for tasks like ECG classification.
+
+#### Architecture
+
+The LSTM model architecture is defined as follows:
+
+ * **input Shape**:The input data has a shape of (100, 50), where 100 represents the number of time steps and 50 represents the number of features at each time step.<br>
+  * **LSTM Layer**: The LSTM layer consists of 64 units, allowing the model to learn temporal patterns within the data.<br>
+ * **Dense Layers**: Two dense layers follow the LSTM layer, with 32 units in the first layer and 1 unit in the output layer. The activation functions used are ReLU and Sigmoid, respectively.<br>
+ * **Compilation**: The model is compiled using the Adam optimizer and binary crossentropy loss function for binary classification tasks. The accuracy metric is used to monitor the model's performance during training.<br>
+
+```python
+optimizer = Adam()
+recurrent_model = Sequential()
+recurrent_model.add(Input(shape=(100, 50)))
+recurrent_model.add(LSTM(64))
+recurrent_model.add(Dense(32, activation='relu'))
+recurrent_model.add(Dense(1, activation='sigmoid'))
+recurrent_model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
+```
+**Callback: Checkpoint**
+In addition to the model architecture, a callback named checkpoint is incorporated during training. Checkpointing is a crucial technique in deep learning that allows the model's weights to be saved periodically, ensuring that the best-performing model is retained.<br>
+
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/LSTM.png" width="350" height="350">
 
 
 ## Results
