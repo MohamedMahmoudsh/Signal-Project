@@ -88,9 +88,29 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
   *  **Global Average Pooling**: is employed to condense the feature maps into a single vector, facilitating the transition to the fully connected layers.
   *  **Dense layer** : with ReLU activation, gradually reducing the dimensionality while extracting high-level features, Each dense layer is followed by dropout regularization to further prevent overfitting the final layer  with a sigmoid activation function is utilized to produce the binary classification output.
   *  **early_stopping function** : is a technique used during training to prevent overfitting by stopping training when the model's performance on a validation dataset starts to degrade, is passed to the fit function as a part of the callbacks
+```python
+CNN_model = Sequential()
+CNN_model.add(Conv1D(128, 55, activation='relu', input_shape=(5000, 1)))
+CNN_model.add(MaxPooling1D(10))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Conv1D(128, 25, activation='relu'))
+CNN_model.add(MaxPooling1D(5))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Conv1D(128, 10, activation='relu'))
+CNN_model.add(MaxPooling1D(5))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Conv1D(128, 5, activation='relu'))
+CNN_model.add(GlobalAveragePooling1D())
+CNN_model.add(Dense(256, kernel_initializer='normal', activation='relu'))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Dense(128, kernel_initializer='normal', activation='relu'))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Dense(64, kernel_initializer='normal', activation='relu'))
+CNN_model.add(Dropout(0.5))
+CNN_model.add(Dense(1, kernel_initializer='normal', activation='sigmoid'))
+CNN_model.compile(loss = 'binarycrossentropy')
 
-
-
+```
 ## LSTM model
 
 The Long Short-Term Memory (LSTM) network architecture employed in this project is designed to analyze sequential data such as Electrocardiogram (ECG) signals. LSTMs are particularly effective in capturing long-term dependencies in time-series data, making them suitable for tasks like ECG classification.
