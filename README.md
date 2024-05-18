@@ -35,9 +35,9 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 - **Characteristics**: Number of samples:45,152 , duration of ECG signals:10 seconds , 500 Hz sampling rate.
 
 ## Preprocessing Steps
-
-Explain the preprocessing steps performed on the raw ECG data to prepare it for model training.
-
+In our data we have alot of disease , but we need to focus on Normal case and Sinus Bradycardia.
+### First we need to undestand what is the sinus Bradycardia
+Bradycardia is a slower than normal heart rate. A normal adult resting heart rate is between 60 – 100 beats per minute (bpm). If you have bradycardia, your heart beats fewer than 60 times a minute.
 
 
 ## CNN model
