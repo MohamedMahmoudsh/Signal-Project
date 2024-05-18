@@ -7,6 +7,7 @@ A project focused on classifying ECG signals using deep learning techniques.
 This project is dedicated to the classification of ECG (Electrocardiogram) signals through the application of deep learning models. By leveraging advanced neural network architectures, the aim is to accurately identify different types of heart conditions from ECG data. This tool can assist in the early detection and diagnosis of cardiac anomalies, potentially saving lives by enabling timely medical intervention.
 
 
+
 ## Table of Contents
 
 1. [Data Description](#data-description)
@@ -36,9 +37,25 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 
 ## Preprocessing Steps
 In our data we have alot of disease , but we need to focus on Normal case and Sinus Bradycardia.
+
 ### First we need to undestand what is the sinus Bradycardia
 Bradycardia is a slower than normal heart rate. A normal adult resting heart rate is between 60 – 100 beats per minute (bpm). If you have bradycardia, your heart beats fewer than 60 times a minute.
+![download](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/6dc14a2d-056b-4f6f-9899-6e5002492f98)
 
+### Our finding about preprocessing
+
+1 - We find that data contains 60 disease so we need to filter only a Normal(Sinus Rythme) and abnormal case (Siuns Bradycardia).
+2 - We found that many pearson can have more than one disease.
+3 - In signal processing domain we can store actual data in (.mat) file and store the data description in (.hea) file. 
+ex patient1.mat , patient1.hea 
+4 - We have data description (disease name encoded with numbre) in seperate file . 
+### How can adress this problem  ? 
+1 - Store your data directory(.hea file , .mat file ) in list  
+2 - filter data by choosing .hea files only
+3 - Open .hea file (contain labels)  and extract the labels
+4 - Create a Dataframe and store the file name (but without directory ex patient1) ,and the label
+    since we have more than one disease so  we store the the label info inside a list
+5 - Choose only the recoerd which contain a length one array 
 
 ## CNN model
 
