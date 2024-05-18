@@ -48,8 +48,6 @@ Arrhythmia constitutes a problem with the rate or rhythm of the heartbeat, and a
 ## Preprocessing Steps
 In our data we have alot of disease , but we need to focus on Normal case and Sinus Bradycardia.
 
-### First we need to undestand what is the sinus Bradycardia
-Bradycardia is a slower than normal heart rate. A normal adult resting heart rate is between 60 – 100 beats per minute (bpm). If you have bradycardia, your heart beats fewer than 60 times a minute.
 ![download](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/6dc14a2d-056b-4f6f-9899-6e5002492f98)
 
 ### Our finding about preprocessing
@@ -58,14 +56,26 @@ Bradycardia is a slower than normal heart rate. A normal adult resting heart rat
 - We found that many pearson can have more than one disease.
 - In signal processing domain we can store actual data in (.mat) file and store the data description in (.hea) file. 
 -ex patient1.mat , patient1.hea 
-  - We have data description (disease name encoded with numbre) in seperate file . 
+- We have  disease name encoded with numbre in seperate csv file named by "ConditionNames_SNOMED-CT.csv".
+
 ### How can adress this problem  ? 
+
 - Store your data directory(.hea file , .mat file ) in list .
 - filter data by choosing .hea files only.
 - Open .hea file (contain labels)  and extract the labels.
 - Create a Dataframe and store the file name (but without directory ex patient1) ,and the label.
 -   since we have more than one disease so  we store the the label info inside a list.
-- Choose only the recoerd which contain a length one array 
+- Choose only the recoerd which contain a length one array.
+- Search for Sinus Rhythm and Sinus Bradycardia Id.
+- Filter only the labels with the given Id.
+- Save this portion of data in csv.
+- Encode "SR" for Normal , "SB" for abnormal 
+![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
+
+### How to use this csv ?
+-Just by reading csv read all stored directory and store it a numpy array
+- Decod the label zero for Normal , one for Abnormal
+
 
 ## CNN model
   The convolutional Neural Network (CNN) model is designed for binary classification task between normal sinus rhythm and Sinus Bradycardia  **which consists of the following layers**
