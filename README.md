@@ -54,18 +54,18 @@ Bradycardia is a slower than normal heart rate. A normal adult resting heart rat
 
 ### Our finding about preprocessing
 
-1 - We find that data contains 60 disease so we need to filter only a Normal(Sinus Rythme) and abnormal case (Siuns Bradycardia).
-2 - We found that many pearson can have more than one disease.
-3 - In signal processing domain we can store actual data in (.mat) file and store the data description in (.hea) file. 
-ex patient1.mat , patient1.hea 
-4 - We have data description (disease name encoded with numbre) in seperate file . 
+- We find that data contains 60 disease so we need to filter only a Normal(Sinus Rythme) and abnormal case (Siuns Bradycardia).
+- We found that many pearson can have more than one disease.
+- In signal processing domain we can store actual data in (.mat) file and store the data description in (.hea) file. 
+-ex patient1.mat , patient1.hea 
+  - We have data description (disease name encoded with numbre) in seperate file . 
 ### How can adress this problem  ? 
-1 - Store your data directory(.hea file , .mat file ) in list .
-2 - filter data by choosing .hea files only.
-3 - Open .hea file (contain labels)  and extract the labels.
-4 - Create a Dataframe and store the file name (but without directory ex patient1) ,and the label.
-    since we have more than one disease so  we store the the label info inside a list.
-    5 - Choose only the recoerd which contain a length one array 
+- Store your data directory(.hea file , .mat file ) in list .
+- filter data by choosing .hea files only.
+- Open .hea file (contain labels)  and extract the labels.
+- Create a Dataframe and store the file name (but without directory ex patient1) ,and the label.
+-   since we have more than one disease so  we store the the label info inside a list.
+- Choose only the recoerd which contain a length one array 
 
 ## CNN model
   The convolutional Neural Network (CNN) model is designed for binary classification task between normal sinus rhythm and Sinus Bradycardia  **which consists of the following layers**
