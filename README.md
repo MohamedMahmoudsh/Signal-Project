@@ -32,7 +32,7 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 
 - **Format**: Description of file formats Each recorder consists of a header file (.hea) and a data file (.mat).
   
-- **Characteristics**: Number of samples:45,152 , duration of ECG signals:10 seconds , sampling rate.
+- **Characteristics**: Number of samples:45,152 , duration of ECG signals:10 seconds , 500 Hz sampling rate.
 
 ## Preprocessing Steps
 
