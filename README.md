@@ -89,7 +89,8 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
   *  **Dense layer** : with ReLU activation, gradually reducing the dimensionality while extracting high-level features, Each dense layer is followed by dropout regularization to further prevent overfitting the final layer  with a sigmoid activation function is utilized to produce the binary classification output.
   *  **early_stopping function** : is a technique used during training to prevent overfitting by stopping training when the model's performance on a validation dataset starts to degrade, is passed to the fit function as a part of the callbacks
     
-    ![Uploading CNN.png…]()
+
+![WhatsApp Image 2024-05-19 at 02 36 36_7392472b](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/0e0c176e-b4f8-4a3a-99e3-8bd316091eb8)
 
 
 ## LSTM model
