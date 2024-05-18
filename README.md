@@ -17,13 +17,23 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 
 ## Data Description
 
--First, each subject underwent a 12-lead resting ECG test that was taken over a period of 10 seconds.
+#### General information about the data
+-First, each subject underwent a 12-lead resting ECG test that was taken over a period of 10 seconds.<br>
+-This database consists of 45,152 patient ECGs. The number of volts per A/D bit is 4.88, and A/D converter had 32-bit resolution. The amplitude unit was microvolt. The upper limit was 32,767, and the lower limit was −32,768.<br>
+-There are labels of each subject’s rhythm and other conditions such as PVC, right bundle branch block (RBBB), left bundle branch block (LBBB), and atrial premature beat (APB).<br>
+-All recordings are organized in two levels folder directory under the WFDBRecords folder.<br>
 
--This database consists of 45,152 patient ECGs. The number of volts per A/D bit is 4.88, and A/D converter had 32-bit resolution. The amplitude unit was microvolt. The upper limit was 32,767, and the lower limit was −32,768.
+<h3 style="color:green;"> The main problem we focused on </h3>
+Arrhythmia constitutes a problem with the rate or rhythm of the heartbeat, and an early diagnosis is essential for the timely inception of successful treatment.<be>
 
--There are labels of each subject’s rhythm and other conditions such as PVC, right bundle branch block (RBBB), left bundle branch block (LBBB), and atrial premature beat (APB).
-
--All recordings are organized in two levels folder directory under the WFDBRecords folder.
+#### Types of diseases that can cause arrhythmia.
+-atrial fibrillation.<br>
+-general supraventricular.<br>
+-sinus bradycardia.<br>
+-sinus irregularity rhythm.<br>
+#### The main disease that was chosen from this dataset
+-**sinus bradycardia:** is a condition characterized by an abnormally slow heart rate originating from the sinus node, which is the natural pacemaker of the heart.<br>
+-In adults, sinus bradycardia is typically defined as a resting heart rate of fewer than 60 beats per minute.<br>
 
 - **Source**:
   - [PhysioNet](https://physionet.org/content/ecg-arrhythmia/1.0.0/WFDBRecords/01/#files-panel) -That the link of the data on PhysioNet.
