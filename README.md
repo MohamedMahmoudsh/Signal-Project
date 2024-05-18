@@ -70,11 +70,13 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
 - Filter only the labels with the given Id.
 - Save this portion of data in csv.
 - Encode "SR" for Normal , "SB" for abnormal 
+
+
 ![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
 
 ### How to use this csv ?
 -Just by reading csv read all stored directory and store it a numpy array
-- Decod the label zero for Normal , one for Abnormal
+-Decod the label zero for Normal , one for Abnormal
 
 
 ## CNN model
