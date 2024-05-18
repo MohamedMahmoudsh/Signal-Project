@@ -51,3 +51,14 @@ Explain the preprocessing steps performed on the raw ECG data to prepare it for 
 2. **Normalization**: Explain how the data is normalized or standardized.
 3. **Segmentation**: If applicable, describe how the ECG signals are segmented into smaller chunks.
 4. **Feature Extraction**: Detail any feature extraction techniques used.
+
+
+## CNN model
+
+
+
+## LSTM model
+
+
+
+## Results
