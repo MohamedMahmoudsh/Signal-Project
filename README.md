@@ -74,8 +74,9 @@ Bradycardia is a slower than normal heart rate. A normal adult resting heart rat
   *  **Dropout** : is then introduced with a rate of 0.5 to mitigate overfitting
   *  **Global Average Pooling**: is employed to condense the feature maps into a single vector, facilitating the transition to the fully connected layers.
   *  **Dense layer** : with ReLU activation, gradually reducing the dimensionality while extracting high-level features, Each dense layer is followed by dropout regularization to further prevent overfitting the final layer  with a sigmoid activation function is utilized to produce the binary classification output.
+  *  **early_stopping function** : is a technique used during training to prevent overfitting by stopping training when the model's performance on a validation dataset starts to degrade, is passed to the fit function as a part of the callbacks
     
-
+    
 
 ## LSTM model
 
