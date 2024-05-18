@@ -38,10 +38,6 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 
 Explain the preprocessing steps performed on the raw ECG data to prepare it for model training.
 
-1. **Data Cleaning**: Describe any data cleaning steps, such as handling missing values or outliers.
-2. **Normalization**: Explain how the data is normalized or standardized.
-3. **Segmentation**: If applicable, describe how the ECG signals are segmented into smaller chunks.
-4. **Feature Extraction**: Detail any feature extraction techniques used.
 
 
 ## CNN model
