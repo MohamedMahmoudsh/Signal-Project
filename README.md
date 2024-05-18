@@ -60,11 +60,11 @@ Bradycardia is a slower than normal heart rate. A normal adult resting heart rat
 ex patient1.mat , patient1.hea 
 4 - We have data description (disease name encoded with numbre) in seperate file . 
 ### How can adress this problem  ? 
-1 - Store your data directory(.hea file , .mat file ) in list  
-2 - filter data by choosing .hea files only
-3 - Open .hea file (contain labels)  and extract the labels
-4 - Create a Dataframe and store the file name (but without directory ex patient1) ,and the label
-    since we have more than one disease so  we store the the label info inside a list-
+1 - Store your data directory(.hea file , .mat file ) in list .
+2 - filter data by choosing .hea files only.
+3 - Open .hea file (contain labels)  and extract the labels.
+4 - Create a Dataframe and store the file name (but without directory ex patient1) ,and the label.
+    since we have more than one disease so  we store the the label info inside a list.
     5 - Choose only the recoerd which contain a length one array 
 
 ## CNN model
