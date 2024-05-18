@@ -41,7 +41,11 @@ Bradycardia is a slower than normal heart rate. A normal adult resting heart rat
 
 
 ## CNN model
-
+  The convolutional Neural Network (CNN) model is designed for binary classification task between normal sinus rhythm and Sinus Bradycardia  **which consists of the following layers**
+  * **Input Layer**: The model starts with a 1D convolutional layer (Conv1D) consisting of 128 filters, each with a kernel size of 55 and ReLU activation. This layer is tailored to process input signals of length 5000 with a single feature.
+  * **Pooling layer** : Following the convolutional layer, a max-pooling layer (MaxPooling1D) is applied with a pool size of 10.
+  *  **Dropout** : is then introduced with a rate of 0.5 to mitigate overfitting
+  *  
 
 
 ## LSTM model
