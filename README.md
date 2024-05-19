@@ -69,7 +69,8 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
 - Search for Sinus Rhythm and Sinus Bradycardia Id.
 - Filter only the labels with the given Id.
 - Save this portion of data in csv.
-- Encode "SR" for Normal , "SB" for abnormal 
+- Encode "SR" for Normal , "SB" for abnormal
+- We will use only one channel lead I channel 
 
 
 ![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
