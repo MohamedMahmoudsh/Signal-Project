@@ -125,7 +125,7 @@ The Long Short-Term Memory (LSTM) network architecture employed in this project 
 
 The LSTM model architecture is defined as follows:
 
- * **input Shape**:The input data has a shape of (100, 50), where 100 represents the number of time steps and 50 represents the number of features at each time step.<br>
+ * **input Shape**:The input data has a shape of (100, 50), where 100 represents the number of time steps and 50 represents the number of window size at each time step.<br>
   * **LSTM Layer**: The LSTM layer consists of 64 units, allowing the model to learn temporal patterns within the data.<br>
  * **Dense Layers**: Two dense layers follow the LSTM layer, with 32 units in the first layer and 1 unit in the output layer. The activation functions used are ReLU and Sigmoid, respectively.<br>
  * **Compilation**: The model is compiled using the Adam optimizer and binary crossentropy loss function for binary classification tasks. The accuracy metric is used to monitor the model's performance during training.<br>
