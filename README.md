@@ -72,14 +72,15 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
 - Encode "SR" for Normal , "SB" for abnormal
 - We will use only one channel lead I channel 
 
-
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Block%20Digram%20.jpeg" width="660" height="420">
 
 
 ### How to use this csv ?
--Just by reading csv read all stored directory and store it a numpy array.
+-Just by reading csv read all stored directory and store it a numpy array.<br>
+-Decod the label zero for Normal , one for Abnormal.<br>
 
--Decod the label zero for Normal , one for Abnormal.
-![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/CSV%20sample%20.jpeg" width="200" height="350">
+
 [Preprocessing Notebook](https://github.com/MohamedMahmoudsh/Signal-Project/tree/main/Preprocessing)
 ## CNN model
   The convolutional Neural Network (CNN) model is designed for binary classification task between normal sinus rhythm and Sinus Bradycardia  **which consists of the following layers**
