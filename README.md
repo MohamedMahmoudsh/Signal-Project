@@ -160,13 +160,15 @@ we best describe the performance of the model through **ROC Curve (Receiver Oper
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20matrix%20of%20CNN.png" width="350" height="350">
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20CNN.png" width="350" height="350">
 </div> 
- ## for LSTM Model  
+
+ ## For LSTM Model
+ 
  * In ROC due to high True Positive Rate (TPR) and low False Positive Rate which result in an AUC of 0.9929 this indicates excellent performance for the model.
  * IN the matrix we get 418 instances of True Positives(TP), 278 instances of True Negatives (TN), 9 instances of False Positives (FP), and 9 instances of False Negatives (FN).
  * accuracy of about 0.975
  * f1 score of about 0.979
 <div>  
-<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20matrix%20of%20CNN.png" width="350" height="350">
-<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20CNN.png" width="350" height="350">
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20marix%20of%20LSTM.png" width="350" height="350">
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20LSTM.png" width="350" height="350">
 </div> 
  
