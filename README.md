@@ -15,6 +15,7 @@ This project is dedicated to the classification of ECG (Electrocardiogram) signa
 3. [CNN Model](#cnn-model)
 4. [LSTM Model](#lstm-model)
 5. [Results](#results)
+6. [Requirements](#requirements)
 
 ## Data Description
 
