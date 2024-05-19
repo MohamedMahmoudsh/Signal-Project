@@ -73,13 +73,13 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
 - We will use only one channel lead I channel 
 
 
-![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
+
 
 ### How to use this csv ?
 -Just by reading csv read all stored directory and store it a numpy array.
 
 -Decod the label zero for Normal , one for Abnormal.
-
+![image](https://github.com/MohamedMahmoudsh/Signal-Project/assets/113555799/bd11f4df-c9bd-4f31-844d-ad9088dc7614)
 [Preprocessing Notebook](https://github.com/MohamedMahmoudsh/Signal-Project/tree/main/Preprocessing)
 ## CNN model
   The convolutional Neural Network (CNN) model is designed for binary classification task between normal sinus rhythm and Sinus Bradycardia  **which consists of the following layers**
