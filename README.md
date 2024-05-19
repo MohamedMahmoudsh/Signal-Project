@@ -87,7 +87,7 @@ In our data we have alot of disease , but we need to focus on Normal case and Si
   *  **Dropout** : is then introduced with a rate of 0.5 to mitigate overfitting
   *  **Global Average Pooling**: is employed to condense the feature maps into a single vector, facilitating the transition to the fully connected layers.
   *  **Dense layer** : with ReLU activation, gradually reducing the dimensionality while extracting high-level features, Each dense layer is followed by dropout regularization to further prevent overfitting the final layer  with a sigmoid activation function is utilized to produce the binary classification output.
-  *  **early_stopping function** : is a technique used during training to prevent overfitting by stopping training when the model's performance on a validation dataset starts to degrade, is passed to the fit function as a part of the callbacks
+
 ```python
 CNN_model = Sequential()
 CNN_model.add(Conv1D(128, 55, activation='relu', input_shape=(5000, 1)))
@@ -110,6 +110,11 @@ CNN_model.add(Dropout(0.5))
 CNN_model.add(Dense(1, kernel_initializer='normal', activation='sigmoid'))
 CNN_model.compile(loss = 'binarycrossentropy')
 
+```
+  *  **early_stopping function** : is a technique used during training to prevent overfitting by stopping training when the model's performance on a validation dataset starts to degrade, is passed to the fit function as a part of the callbacks
+
+```python
+early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 ```
 ## LSTM model
 
@@ -134,8 +139,11 @@ recurrent_model.add(Dense(1, activation='sigmoid'))
 recurrent_model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=['accuracy'])
 ```
 **Callback: Checkpoint**
-In addition to the model architecture, a callback named checkpoint is incorporated during training. Checkpointing is a crucial technique in deep learning that allows the model's weights to be saved periodically, ensuring that the best-performing model is retained.<br>
+In addition to the model architecture, a callback named checkpoint is incorporated during training. Checkpointing is a crucial technique in deep learning that allows the model's weights to be saved periodically, ensuring that the best-performing model is retained.<be>
 
+```python
+ModelCheckpoint(filepath=Best_Recurent_model_directory ,save_best_only=True)
+```
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/LSTM.png" width="350" height="350">
 
 
