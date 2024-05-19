@@ -153,8 +153,20 @@ we best describe the performance of the model through **ROC Curve (Receiver Oper
 *  **Confusion Matrix**: This matrix provides a detailed breakdown of the classification performance by comparing the actual versus predicted classifications.
  ## for CNN Model  
  * In ROC due to high True Positive Rate (TPR) and low False Positive Rate which result in an AUC of 0.999812 so this indicates excellent performance for the model.
- *  IN matrix we get 427 instances of True Positives(TP), 284 instances of True Negatives (TN), 3 instances of False Positives (FP), and 0 instances of False Negatives (FN) which gave us an accuracy of about 0.996 and f1 score of about 0.996
-   
+ *  IN the matrix we get 427 instances of True Positives(TP), 284 instances of True Negatives (TN), 3 instances of False Positives (FP), and 0 instances of False Negatives (FN).
+ * accuracy of about 0.996
+ * f1 score of about 0.996
+ <div>  
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20matrix%20of%20CNN.png" width="350" height="350">
-
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20CNN.png" width="350" height="350">
+</div> 
+ ## for LSTM Model  
+ * In ROC due to high True Positive Rate (TPR) and low False Positive Rate which result in an AUC of 0.9929 this indicates excellent performance for the model.
+ * IN the matrix we get 418 instances of True Positives(TP), 278 instances of True Negatives (TN), 9 instances of False Positives (FP), and 9 instances of False Negatives (FN).
+ * accuracy of about 0.975
+ * f1 score of about 0.979
+<div>  
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20matrix%20of%20CNN.png" width="350" height="350">
+<img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20CNN.png" width="350" height="350">
+</div> 
+ 
