@@ -157,6 +157,7 @@ we best describe the performance of the model through **ROC Curve (Receiver Oper
  *  IN the matrix we get 427 instances of True Positives(TP), 284 instances of True Negatives (TN), 3 instances of False Positives (FP), and 0 instances of False Negatives (FN).
  * accuracy of about 0.996
  * f1 score of about 0.996
+ * The best threshold = 0.66666667
  <div>  
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20matrix%20of%20CNN.png" width="350" height="350">
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20CNN.png" width="350" height="350">
@@ -168,6 +169,7 @@ we best describe the performance of the model through **ROC Curve (Receiver Oper
  * IN the matrix we get 418 instances of True Positives(TP), 278 instances of True Negatives (TN), 9 instances of False Positives (FP), and 9 instances of False Negatives (FN).
  * accuracy of about 0.975
  * f1 score of about 0.979
+ * The best threshold = 0.56565657
 <div>  
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20marix%20of%20LSTM.png" width="350" height="350">
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20LSTM.png" width="350" height="350">
