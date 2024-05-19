@@ -175,4 +175,17 @@ we best describe the performance of the model through **ROC Curve (Receiver Oper
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/Confusion%20marix%20of%20LSTM.png" width="350" height="350">
 <img src="https://github.com/MohamedMahmoudsh/Signal-Project/blob/main/Photos/ROC%20OF%20LSTM.png" width="350" height="350">
 </div> 
- 
+
+## Requirements
+Python implementation is the most updated version of the repository.
+
+### [Python]([python](https://www.python.org/))
+
+- [Numpy](https://numpy.org/)
+- [Scikit learn](http://scikit-learn.org/stable/install.html)
+- [Tensorflow](https://www.tensorflow.org/)
+- [Keras](https://keras.io/)
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [WFDB](https://wfdb.readthedocs.io/en/latest/)
